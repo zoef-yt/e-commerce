@@ -1,1 +1,8 @@
-@import url();
+@import url("https://ui-game.netlify.app/styles.css");
+@import url("./screens/homepage.css");
+@import url("./screens/login-page/login-page.css");
+
+body {
+	height: 100vh;
+	width: 100vw;
+}
