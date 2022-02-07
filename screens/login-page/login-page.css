@@ -2,6 +2,10 @@
 	padding: 4rem 0;
 }
 
+.card:hover {
+	transform: scale(1);
+}
+
 .btn {
 	margin: 1rem 0;
 	width: 90%;
