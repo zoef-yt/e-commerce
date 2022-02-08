@@ -1,0 +1,39 @@
+.card {
+	padding: 4rem 0;
+}
+
+.card:hover {
+	transform: scale(1);
+}
+
+.btn {
+	margin: 1rem 0;
+	width: 90%;
+}
+
+.input-group {
+	margin: 1rem;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+.text-field {
+	margin: 0 0 1rem 0;
+}
+
+.footer {
+	width: 90%;
+	margin: 0 0 1rem 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.checkbox {
+	cursor: pointer;
+	margin: 0 1rem 0 0;
+	width: 1.8rem;
+	height: 1.8rem;
+	transition: all 0.3s ease-in-out;
+}
