@@ -7,6 +7,8 @@
 		' main-content '
 		' footer  ';
 	margin: auto;
+
+	height: 100vh;
 	width: 100%;
 	max-width: 170rem;
 }
@@ -97,4 +99,10 @@
 .card-overlay-holder:hover .card-overlay {
 	opacity: 1;
 	background-color: var(--colour-dark-with-opacity-two);
+}
+
+@media only screen and (min-width: 1999px) {
+	.feature-section {
+		max-width: 170rem;
+	}
 }
