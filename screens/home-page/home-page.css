@@ -1,13 +1,12 @@
 .homepage {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 8rem 1fr 8rem;
+	grid-template-rows: 8rem 1fr 5rem;
 	grid-template-areas:
 		' top-navbar '
 		' main-content '
 		' footer  ';
 	margin: auto;
-
 	height: 100vh;
 	width: 100%;
 	max-width: 170rem;
@@ -47,12 +46,13 @@
 	margin: 0;
 	max-width: 20vw;
 	width: 100%;
+	transition: all 0.3s ease-in-out;
 }
 
 .navbar-cta {
 	min-width: 20%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	transition: all 0.2s ease-in-out;
 }
@@ -94,6 +94,12 @@
 
 .features-row .card {
 	min-width: 30rem;
+}
+.card-overlay {
+	transition: all 0.2s ease-in-out;
+}
+.card-overlay-holder:hover .card-img {
+	filter: blur(1px);
 }
 
 .card-overlay-holder:hover .card-overlay {
