@@ -1,8 +1,8 @@
-@import url("https://ui-game.netlify.app/styles.css");
-@import url("./screens/homepage.css");
-@import url("./screens/login-page/login-page.css");
+@import url('https://ui-game.netlify.app/styles.css');
+@import url('./screens/homepage.css');
+@import url('./screens/login-page/login-page.css');
+@import url('./screens/home-page/home-page.css');
 
-body {
-	width: 100vw;
-	height: 100vh;
+:root {
+	--colour-dark-with-opacity-two: rgba(0, 0, 0, 0.8);
 }
