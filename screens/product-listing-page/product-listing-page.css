@@ -1,0 +1,42 @@
+.product-homepage {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 8rem 5rem 1fr 5rem;
+	grid-template-areas:
+		'top-navbar'
+		'filter-bar'
+		'main-content'
+		'footer';
+	margin: auto;
+	height: 100vh;
+	width: 100%;
+	max-width: 170rem;
+}
+
+.product-aside {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-area: filter-bar;
+}
+
+.product-main {
+	padding: 2rem 4rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 29rem));
+	grid-template-rows: minmax(min-content, max-content);
+	justify-content: space-evenly;
+	gap: 4rem;
+}
+/* 
+Commented for future use
+ 
+.card-img {
+	max-width: 30rem;
+	height: 30rem;
+	object-fit: contain;
+	background-color: var(--colour-perfect-white);
+} */
+
+.card {
+	width: auto;
+}

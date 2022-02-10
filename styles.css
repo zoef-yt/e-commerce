@@ -2,7 +2,9 @@
 @import url('./screens/homepage.css');
 @import url('./screens/login-page/login-page.css');
 @import url('./screens/home-page/home-page.css');
+@import url('./screens/product-listing-page/product-listing-page.css');
 
 :root {
 	--colour-dark-with-opacity-two: rgba(0, 0, 0, 0.8);
+	--colour-perfect-white: #fff;
 }
