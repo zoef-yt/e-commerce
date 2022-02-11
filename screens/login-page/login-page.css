@@ -14,22 +14,41 @@
 	flex-direction: column;
 }
 
-.text-field {
-	margin: 0 0 1rem 0;
+.input-group > * {
+	margin: 0.5rem;
 }
 
-.footer {
-	width: 90%;
+.input-group .text-field {
+	margin: 0 0 1rem 0;
+	width: 30rem;
+	max-width: 100%;
+}
+
+.remember-me-block {
 	margin: 0 0 1rem 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .checkbox {
 	cursor: pointer;
-	margin: 0 1rem 0 0;
+	margin: 0 0.5rem 0 0;
 	width: 1.8rem;
 	height: 1.8rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal-card {
+	max-width: max-content;
+	width: 100%;
+}
+
+.only-for-sign-in {
+	transition: all 0.3s ease-in-out;
+}
+.only-for-sign-up {
+	display: none;
 	transition: all 0.3s ease-in-out;
 }

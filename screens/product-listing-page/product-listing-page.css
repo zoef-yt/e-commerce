@@ -37,6 +37,8 @@ Commented for future use
 	background-color: var(--colour-perfect-white);
 } */
 
-.card {
+.feature-row > .card,
+.product-main > .card {
 	width: auto;
+	height: min-content;
 }
