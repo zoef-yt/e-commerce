@@ -95,11 +95,13 @@
 .features-row .card {
 	min-width: 30rem;
 }
+
 .card-overlay {
 	transition: all 0.2s ease-in-out;
 }
+
 .card-overlay-holder:hover .card-img {
-	filter: blur(1px);
+	filter: blur(3px);
 }
 
 .card-overlay-holder:hover .card-overlay {

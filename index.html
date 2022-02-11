@@ -13,8 +13,8 @@
 				<a href="index.html"> <h1>Need Games</h1> </a>
 			</div>
 			<input type="search" class="text-field" />
-			<div class="navbar-cta"
-				><a href="./screens/login-page/login-page.html" class="btn btn-link">Hello, Login</a>
+			<div class="navbar-cta">
+				<a onclick="openModal('login-modal')" id="login-text" class="btn btn-link">Hello, Login</a>
 				<div class="badge-holder">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -311,5 +311,41 @@
 		<footer class="homepage-footer">
 			<p>Made with &hearts; by zoef shaikh</p>
 		</footer>
+
+		<!-- !Logout modal here -->
+		<div id="login-modal" class="modal-display-none modal">
+			<div class="modal-card">
+				<div class="flex-column align-items-center space-evenly">
+					<h1 class="only-for-sign-in">Login</h1>
+					<h1 class="only-for-sign-up">SignUp</h1>
+					<div class="input-group">
+						<label for="email">Email Address</label>
+						<input class="text-field" autocomplete="off" type="email" id="email" placeholder="johndoe@example.com" />
+						<label for="password">Password</label>
+						<input class="text-field" type="password" id="password" placeholder="password" />
+						<label class="only-for-sign-up" for="confirm-password">Confirm password</label>
+						<input
+							class="only-for-sign-up text-field"
+							class="text-field"
+							type="password"
+							id="confirm-password"
+							placeholder="Confirm-password"
+						/>
+					</div>
+					<div class="remember-me-block">
+						<input type="checkbox" class="checkbox" name="remember me" id="remember-me" />
+						<label class="margin-right remember-me-text" for="remember-me">Remember me</label>
+					</div>
+					<a class="btn-link only-for-sign-in">Forgot Password?</a>
+					<button class="only-for-sign-in btn btn-primary">Login</button>
+					<button class="only-for-sign-up btn btn-primary">SignUp</button>
+					<button class="only-for-sign-in btn-link btn" onclick="changeToSignUp()">Don't have account?Sign up!</button>
+					<button class="only-for-sign-up btn-link btn" onclick="changeToSignIn()"> Already have account?Log In!</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- !js here -->
+		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
