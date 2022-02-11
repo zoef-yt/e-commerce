@@ -34,7 +34,7 @@
 	color: var(--colour-text-white-two);
 	border-radius: 0 0 1rem 1rem;
 	position: absolute;
-	min-width: 160px;
+	min-width: 16rem;
 	max-height: 30rem;
 	overflow: auto;
 	z-index: 1;
