@@ -8,15 +8,15 @@ const openModal = (id) => {
 };
 
 const closeModal = (id) => {
-	if (document.getElementById(id).classList.contains('modal')) {
-		document.getElementById(id).classList.remove('modal-opened');
-		document.getElementById(id).classList.add('modal-display-none');
+	if (document.getElementById(id)?.classList.contains('modal')) {
+		document.getElementById(id)?.classList.remove('modal-opened');
+		document.getElementById(id)?.classList.add('modal-display-none');
 	}
 };
 
 document.querySelectorAll('.modal').forEach((el) => el.addEventListener('click', (e) => closeModal(e.target.id)));
 
-document.querySelector('#login-text').addEventListener('click', () => {
+document.querySelector('#login-text')?.addEventListener('click', () => {
 	openModal('login-modal');
 });
 
@@ -31,3 +31,15 @@ const changeToSignIn = () => {
 	document.querySelectorAll('.only-for-sign-up').forEach((el) => (el.style.display = 'none'));
 	document.querySelector('#login-text').innerHTML = 'Hello, Login';
 };
+
+//dropdown scrollbar code here
+(function () {
+	const scroller = document.querySelector('.filter-items');
+	const dropDown = document.querySelectorAll('.dropdown-content');
+	scroller?.addEventListener('scroll', checkScroll);
+	function checkScroll() {
+		for (let i = 0; i < dropDown.length; i++) {
+			dropDown[i].style.transform = 'translateX(-' + scroller.scrollLeft + 'px)';
+		}
+	}
+})();
