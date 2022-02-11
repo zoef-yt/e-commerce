@@ -16,6 +16,10 @@ const closeModal = (id) => {
 
 document.querySelectorAll('.modal').forEach((el) => el.addEventListener('click', (e) => closeModal(e.target.id)));
 
+document.querySelector('#login-text').addEventListener('click', () => {
+	openModal('login-modal');
+});
+
 const changeToSignUp = () => {
 	document.querySelectorAll('.only-for-sign-in').forEach((el) => (el.style.display = 'none'));
 	document.querySelectorAll('.only-for-sign-up').forEach((el) => (el.style.display = 'block'));
