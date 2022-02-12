@@ -13,6 +13,7 @@
 	width: 100%;
 	max-width: 170rem;
 }
+
 .filter-section {
 	grid-area: filter-bar;
 }
@@ -80,7 +81,6 @@
 	padding: 2rem 4rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 29rem));
-	grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
 	justify-content: space-evenly;
 	gap: 4rem;
 	grid-area: main-content;
