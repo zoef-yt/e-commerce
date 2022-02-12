@@ -29,7 +29,7 @@
 	max-width: 20rem;
 	object-fit: contain;
 	background-color: var(--colour-perfect-white);
-	aspect-ratio: 1/1;
+	aspect-ratio: 1;
 	border-radius: 0.5rem;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .suggestions-row {
-	max-width: 100%;
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(14, 20rem);
 	grid-template-rows: 1fr;
