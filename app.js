@@ -43,3 +43,9 @@ const changeToSignIn = () => {
 		}
 	}
 })();
+
+const cartLocation = '/screens/cart/cart.html';
+const wishListLocation = '/screens/wishlist/wishlist.html';
+document.querySelectorAll('.cart-icon').forEach((e) => e.addEventListener('click', () => (location.href = cartLocation)));
+
+document.querySelectorAll('.wishlist-icon').forEach((e) => e.addEventListener('click', () => (location.href = wishListLocation)));

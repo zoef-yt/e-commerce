@@ -3,6 +3,7 @@
 @import url('./screens/login-page/login-page.css');
 @import url('./screens/home-page/home-page.css');
 @import url('./screens/product-listing-page/product-listing-page.css');
+@import url('./screens/cart/cart.css');
 
 :root {
 	--colour-dark-with-opacity-two: rgba(0, 0, 0, 0.8);
