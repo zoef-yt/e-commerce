@@ -69,7 +69,70 @@
 				/>
 			</div>
 		</nav>
-		<aside class="product-aside"> </aside>
+		<aside class="filter-section">
+			<div class="product-filter-bar">
+				<div class="filter-items">
+					<h3>Filter By:</h3>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-btn">Sort by Price</button>
+						<div class="dropdown-content">
+							<label><input type="radio" id="low-to-high" name="sort-by-price" />Price: Low to High</label>
+
+							<label><input type="radio" id="high-to-low" name="sort-by-price" />Price: High to Low</label>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-btn">Price Range</button>
+						<div class="dropdown-content">
+							<label class="slider">Price: </label>
+							<div class="slider"> <input type="range" min="10" max="1000" value="20" /></div>
+
+							<h2>$1000</h2>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-btn">Type of product</button>
+						<div class="dropdown-content">
+							<label><input type="radio" name="platform" />Consoles</label>
+
+							<label><input type="radio" name="platform" />Games</label>
+
+							<label><input type="radio" name="platform" />Accessories</label>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-btn">Ratings</button>
+						<div class="dropdown-content">
+							<label><input type="radio" name="ratings" />4 Stars & above</label>
+							<label><input type="radio" name="ratings" /> Stars & above</label>
+							<label><input type="radio" name="ratings" />2 Stars & above</label>
+							<label><input type="radio" name="ratings" />1 Stars & above</label>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-btn">Genre</button>
+						<div class="dropdown-content">
+							<label><input type="checkbox" /> Adventure</label>
+							<label><input type="checkbox" /> Dance</label>
+							<label><input type="checkbox" /> Simulation</label>
+							<label><input type="checkbox" /> Strategy</label>
+							<label><input type="checkbox" /> Survival</label>
+							<label><input type="checkbox" /> Action Adventure</label>
+							<label><input type="checkbox" /> Fighting</label>
+							<label><input type="checkbox" /> First Person Shooter</label>
+							<label><input type="checkbox" /> Platformer</label>
+							<label><input type="checkbox" /> Puzzle</label>
+							<label><input type="checkbox" /> Racing</label>
+							<label><input type="checkbox" /> Role Playing Game</label>
+							<label><input type="checkbox" /> Sports</label>
+							<label><input type="checkbox" /> Stealth</label>
+							<label><input type="checkbox" /> Survival Horror</label>
+							<label><input type="checkbox" /> Third Person Shooter</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
 		<main class="product-main">
 			<div class="card">
 				<div class="card-overlay-holder">
@@ -252,5 +315,6 @@
 		<footer class="homepage-footer">
 			<p>Made with &hearts; by zoef shaikh</p>
 		</footer>
+		<script src="/app.js"></script>
 	</body>
 </html>

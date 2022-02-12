@@ -1,7 +1,8 @@
 .product-homepage {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 8rem 5rem 1fr 5rem;
+	gap: 1rem;
+	grid-template-rows: 8rem 8rem 1fr 5rem;
 	grid-template-areas:
 		'top-navbar'
 		'filter-bar'
@@ -12,30 +13,78 @@
 	width: 100%;
 	max-width: 170rem;
 }
-
-.product-aside {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+.filter-section {
 	grid-area: filter-bar;
+}
+
+.filter-items {
+	width: 60vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: calc(11.1rem + 2vw) repeat(5, minmax(calc(15.1rem + 2vw), max-content));
+	grid-template-rows: 1fr;
+	overflow-x: auto;
+	align-items: center;
+}
+
+.dropdown-content {
+	display: none;
+	background-color: var(--colour-accent-second);
+	border: 1px solid var(--colour-accent-one);
+	color: var(--colour-text-white-two);
+	border-radius: 0 0 1rem 1rem;
+	position: absolute;
+	min-width: 16rem;
+	max-height: 30rem;
+	overflow: auto;
+	z-index: 1;
+}
+
+.dropdown-content > * {
+	margin: 1rem;
+	display: block;
+}
+
+.dropdown-content > input {
+	display: inline-block !important;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.slider input[type='range'] {
+	-webkit-appearance: none !important;
+	background: var(--colour-accent-third);
+	width: 100%;
+	height: 3px;
+	border: none;
+	outline: none;
+}
+
+.slider input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: var(--colour-text-white-two);
+	border: 2px solid var(--colour-accent-third);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider input[type='range']::-webkit-slider-thumb:hover {
+	background-color: var(--colour-primary);
 }
 
 .product-main {
 	padding: 2rem 4rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 29rem));
-	grid-template-rows: minmax(min-content, max-content);
+	grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
 	justify-content: space-evenly;
 	gap: 4rem;
+	grid-area: main-content;
 }
-/* 
-Commented for future use
- 
-.card-img {
-	max-width: 30rem;
-	height: 30rem;
-	object-fit: contain;
-	background-color: var(--colour-perfect-white);
-} */
 
 .feature-row > .card,
 .product-main > .card {
