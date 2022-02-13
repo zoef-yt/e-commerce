@@ -4,6 +4,7 @@
 @import url('./screens/home-page/home-page.css');
 @import url('./screens/product-listing-page/product-listing-page.css');
 @import url('./screens/cart/cart.css');
+@import url('./screens/wishlist/wishlist.css');
 
 :root {
 	--colour-dark-with-opacity-two: rgba(0, 0, 0, 0.8);
