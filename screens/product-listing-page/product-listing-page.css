@@ -47,7 +47,7 @@
 	top: 0;
 	left: 45%;
 	margin-left: -5px;
-	border-width: 10px;
+	border-width: 1rem;
 	border-style: solid;
 	border-color: var(--colour-accent-one) transparent transparent transparent;
 }
@@ -166,13 +166,13 @@
 }
 
 .profile-modal > * {
-	margin: 0.5rem;
-	border-radius: 0.5rem;
+	margin: 5px;
+	border-radius: 5px;
 	transition: all 0.3s ease-in-out;
 }
 
 .profile-modal li:hover {
-	padding-left: 0.5rem;
+	padding-left: 5px;
 	background-color: var(--colour-accent-third-with-opacity);
 }
 
