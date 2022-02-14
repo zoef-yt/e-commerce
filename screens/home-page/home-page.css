@@ -63,7 +63,7 @@
 }
 
 .navbar-cta > *:hover:not(:last-child) {
-	transform: translateY(-0.2rem);
+	transform: translateY(-2px);
 	cursor: pointer;
 	color: var(--colour-primary);
 }
