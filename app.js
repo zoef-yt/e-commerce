@@ -49,3 +49,38 @@ const wishListLocation = '/screens/wishlist/wishlist.html';
 document.querySelectorAll('.cart-icon').forEach((e) => e.addEventListener('click', () => (location.href = cartLocation)));
 
 document.querySelectorAll('.wishlist-icon').forEach((e) => e.addEventListener('click', () => (location.href = wishListLocation)));
+
+//* dark mode
+
+let currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'light') {
+	document.documentElement.setAttribute('data-theme', 'light');
+	document.querySelectorAll('.theme-changer-icon').forEach(function (item) {
+		item.src = '/assets/svg/moon.svg';
+	});
+} else {
+	document.documentElement.setAttribute('data-theme', 'dark');
+	document.querySelectorAll('.theme-changer-icon').forEach(function (item) {
+		item.src = '/assets/svg/sun.svg';
+	});
+}
+const switchTheme = () => {
+	currentTheme = localStorage.getItem('theme');
+	if (currentTheme === 'light') {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		document.getElementById('showcase-display-iframe')?.contentWindow.location.reload();
+		localStorage.setItem('theme', 'dark');
+		document.querySelectorAll('.theme-changer-icon').forEach(function (item) {
+			item.src = '/assets/svg/sun.svg';
+		});
+	} else {
+		document.documentElement.setAttribute('data-theme', 'light');
+		document.getElementById('showcase-display-iframe')?.contentWindow.location.reload();
+		localStorage.setItem('theme', 'light');
+		document.querySelectorAll('.theme-changer-icon').forEach(function (item) {
+			item.src = '/assets/svg/moon.svg';
+		});
+	}
+};
+
+document.querySelectorAll('.theme-changer').forEach((e) => e.addEventListener('click', switchTheme));
